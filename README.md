@@ -27,4 +27,9 @@ GPON is an alternative to Etrhernet switching in campus networking. Replaces the
 - Split ratio: Restricted by path loss, PON with passive splitters **(16, 32, or 64 way split)**
 - Rate: 1.24416 Gigabits/s up, 2.48832 Gigabits/s down
 
+## Advanced Encryption Strandard AES Encryption
+- The OLT initiates the process - requests a key from the ONU
+- The ONU generates the key and sends it to the OLT
+- The OLT defines the key Switching Time and the encrypted ports and notifies the ONU
+
 
