@@ -8,7 +8,7 @@ GPON is an alternative to Etrhernet switching in campus networking. Replaces the
 - Splitters - Used to aggregate or multiplex fiber optic signas to a single upstream fiber optical cable. (1:32 ratio)
 - Optical Line Terminal **(OLT)** - Device that **aggregates** all **optical signals from ONTs** into a **single multiplexed beam of light** which is then **converted into an electrical signal**, formatted to Ethernet packet type standards for Layer 2 or Layer 3 forwarding.
 - Wavelength-Division Multiplexing **(WDM)** - Wavelength-division multiplexing is a technology that multiplexes a number of optical carrier signals onto a single optical fiber that uses different wavelengths of laser light.
-- GEM GPON encapsulation method (GEM) - A data frame transport scheme used in gigabit capable passive optical network
+- GEM GPON encapsulation method **(GEM)** - A data frame transport scheme used in gigabit capable passive optical network
 
 ## Network diagram
 <p align="center">
