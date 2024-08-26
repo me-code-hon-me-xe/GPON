@@ -11,10 +11,15 @@ GPON is an alternative to Etrhernet switching in campus networking. Replaces the
 - GEM GPON encapsulation method (GEM) - A data frame transport scheme used in gigabit capable passive optical network
 
 ## Network diagram
-![Annotation 2024-08-25 235908](https://github.com/user-attachments/assets/6133fd3c-fc2b-4fc2-bc8b-8fa9df51670c)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6133fd3c-fc2b-4fc2-bc8b-8fa9df51670c">
+</p>
 
 ## Technology overview
-![Annotation 2024-08-26 001719](https://github.com/user-attachments/assets/c6c669c7-9e75-4dab-99c3-12143d22c3d9)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c6c669c7-9e75-4dab-99c3-12143d22c3d9">
+</p>
+
 - The **OLT** is connected to the **optical splitter** through a single optical fiber, and then the optical splitter connects to ONUs/ONTs.
 - **GPON** adopts **WDM** to transmit data of different upstream/downstream wavelengths over the same ODN. Wavelengths range from 1290 - 1300 nm in the upstream direction and from 1480 - 1500 nm in the downstream direction.
 - Data is broadcast in the downstream direction, and in the upstream direction data is burst in time-division multiple access (TDMA) mode (based on timeslots).
@@ -34,9 +39,11 @@ GPON is an alternative to Etrhernet switching in campus networking. Replaces the
 </p>
 
 - Point to Multi-Point
-- Every **ONU** gets **all the transmissions**
+- Every **ONU** gets **all the transmissions** **(*)**
 - Security addressed by Advanced Encryption Strandard **(AES)**
-
+- Only happen in **Downstream** because **Upstream** does not have this issue **(*)** security
+- **(*)** means that every ONUs can receive data from the OLT
+  
 ## Advanced Encryption Strandard (AES) Encryption
 **Step 1:** The OLT initiates the process - requests a key from the ONU
 <p align="center">
@@ -53,4 +60,12 @@ GPON is an alternative to Etrhernet switching in campus networking. Replaces the
   <img src="https://github.com/user-attachments/assets/30618953-0286-4ed3-a1ac-3b679b82b281">
 </p>
 
+## GPON transmission basics - Upstream
+**TDMA (Time Division Multiple Access) mechanism:**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/19ad5543-b74f-435e-b9ce-008f84ba59e8">
+</p>
 
+- The **OLT** assigns **timeslots** (BWmaps) for every **ONU** to transmit its upstream transmissions to ensure **collision free transmission** **(*)** <br />
+**(*)** **Collision free transmission** happens when more than one station tries to transmit simultaneously via a shared channel -> the transmitted data is garbled
+- During the **ONU** activation process, the **OLT** assigns an **Equalization Delay** to each ONU to **compensate** for **different distance**
