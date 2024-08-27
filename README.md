@@ -10,6 +10,33 @@ GPON is an alternative to Etrhernet switching in campus networking. Replaces the
 - Wavelength-Division Multiplexing **(WDM)** - Wavelength-division multiplexing is a technology that multiplexes a number of optical carrier signals onto a single optical fiber that uses different wavelengths of laser light.
 - GEM GPON encapsulation method **(GEM)** - A data frame transport scheme used in gigabit capable passive optical network
 
+## Passive optical networks (PON)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/14380424-341d-4439-b00d-5097b891b050">
+</p>
+
+- **OLT** installed at **Central Office**
+- **ONU/ONT** installed at **End-user devices**
+- **Passive splitters** with spliting rate **1:2, 1:32, 1:64**
+- A single fiber and a single OLT interface to serve multiple ONUs
+- Passive (unpowered) optical splitters
+- Minimal occupancy of ducts (ong dan) and space at Central Office
+- Less active equipment, optimal availability and energy consumption
+
+## Active optical networks (AON)
+- AON is optical network that uses equipments such as splitters and switches and routers that require electrical power
+
+## Difference between (PON) and (AON)
+- **AONs** require electrical power, while **PONs** does not require electrical power
+- **AONs** provide higher bandwidth, suitable for businesses and enterprises that required **customized network configurations**
+
+## Gigabit Passive optical networks (GPON)
+
+## Real model
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/469ba37b-fad9-4db2-a28e-0004247fd83a">
+</p>
+
 ## Network diagram
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6133fd3c-fc2b-4fc2-bc8b-8fa9df51670c">
